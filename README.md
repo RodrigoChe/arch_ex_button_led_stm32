@@ -13,9 +13,9 @@ The goal here is to demonstrate with something simple that it's possible to buil
 ## Architectural scheme 
 The project has the following architecture:
 
-![Figure 1](/arch_ex_button_led_stm32/arch_ex_button_led_stm32/Docs/figs/layersFig.png)
+![Figure 1](arch_ex_button_led_stm32/Docs/figs/layersFig.png)
 
-![Figure 2](/arch_ex_button_led_stm32/arch_ex_button_led_stm32/Docs/figs/firmwareOrganigram.png)
+![Figure 2](arch_ex_button_led_stm32/Docs/figs/firmwareOrganigram.png)
 
 The project file structure is as follows:
 ```shell
