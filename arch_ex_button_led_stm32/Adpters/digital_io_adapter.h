@@ -21,7 +21,7 @@ typedef void*          variant_t;
 /**
  * @brief Type definition for pin number.
  */
-typedef uint8_t        pin_t;
+typedef uint16_t        pin_t;
 
 /**
  * @brief Type definition for port.
