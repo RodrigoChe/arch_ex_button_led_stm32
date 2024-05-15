@@ -1,0 +1,91 @@
+\hypertarget{led_8c}{}\doxysection{/media/rodrigo\+\_\+che/\+\_\+files/\+Git\+Hub/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/\+Components/\+Led/led.c File Reference}
+\label{led_8c}\index{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Components/Led/led.c@{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Components/Led/led.c}}
+
+
+\+: Implementation of the LED component interface.  
+
+
+{\ttfamily \#include \char`\"{}led.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{led_8c_a90a9034f5f9beadc6789d891c3be0877}{led\+\_\+initialize}} (\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$p\+\_\+led)
+\begin{DoxyCompactList}\small\item\em Initializes the LED object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{led_8c_a6e046e04fe89898bcc0f805f57c28bd4}{led\+\_\+turn\+\_\+on}} (\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$p\+\_\+led)
+\begin{DoxyCompactList}\small\item\em Turns the LED on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{led_8c_a48ca9451a44c6cd1493e076541813bea}{led\+\_\+turn\+\_\+off}} (\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$p\+\_\+led)
+\begin{DoxyCompactList}\small\item\em Turns the LED off. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{led_8c_a25cfdc5fb83e5b2236b9db3564ca21f2}{led\+\_\+toggle}} (\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$p\+\_\+led)
+\begin{DoxyCompactList}\small\item\em Toggles the state of the LED. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{led_8c_ac27bcbb6ccc5e27f87322d02752a138b}{led\+\_\+controller\+\_\+initialize}} (\mbox{\hyperlink{structled__controller__t}{led\+\_\+controller\+\_\+t}} $\ast$p\+\_\+controller)
+\begin{DoxyCompactList}\small\item\em Initializes the LED controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Implementation of the LED component interface. 
+
+\begin{DoxyAuthor}{Author}
+\+: Rodrigo D. Pechoneri 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{led_8c_ac27bcbb6ccc5e27f87322d02752a138b}\label{led_8c_ac27bcbb6ccc5e27f87322d02752a138b}} 
+\index{led.c@{led.c}!led\_controller\_initialize@{led\_controller\_initialize}}
+\index{led\_controller\_initialize@{led\_controller\_initialize}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_controller\_initialize()}{led\_controller\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} led\+\_\+controller\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structled__controller__t}{led\+\_\+controller\+\_\+t}} $\ast$}]{p\+\_\+controller }\end{DoxyParamCaption})}
+
+
+
+Initializes the LED controller. 
+
+This Function initializes the LED controller by assigning function pointers to control the LED operations. \mbox{\Hypertarget{led_8c_a90a9034f5f9beadc6789d891c3be0877}\label{led_8c_a90a9034f5f9beadc6789d891c3be0877}} 
+\index{led.c@{led.c}!led\_initialize@{led\_initialize}}
+\index{led\_initialize@{led\_initialize}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_initialize()}{led\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} led\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$}]{p\+\_\+led }\end{DoxyParamCaption})}
+
+
+
+Initializes the LED object. 
+
+This function initializes the LED by configuring its digital I/O pin. and the initial state of th LED component \mbox{\Hypertarget{led_8c_a25cfdc5fb83e5b2236b9db3564ca21f2}\label{led_8c_a25cfdc5fb83e5b2236b9db3564ca21f2}} 
+\index{led.c@{led.c}!led\_toggle@{led\_toggle}}
+\index{led\_toggle@{led\_toggle}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_toggle()}{led\_toggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} led\+\_\+toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$}]{p\+\_\+led }\end{DoxyParamCaption})}
+
+
+
+Toggles the state of the LED. 
+
+\begin{DoxyNote}{Note}
+See header \mbox{\hyperlink{led_8h}{led.\+h}} for reference. 
+\end{DoxyNote}
+\mbox{\Hypertarget{led_8c_a48ca9451a44c6cd1493e076541813bea}\label{led_8c_a48ca9451a44c6cd1493e076541813bea}} 
+\index{led.c@{led.c}!led\_turn\_off@{led\_turn\_off}}
+\index{led\_turn\_off@{led\_turn\_off}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_turn\_off()}{led\_turn\_off()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} led\+\_\+turn\+\_\+off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$}]{p\+\_\+led }\end{DoxyParamCaption})}
+
+
+
+Turns the LED off. 
+
+\begin{DoxyNote}{Note}
+See header \mbox{\hyperlink{led_8h}{led.\+h}} for reference. 
+\end{DoxyNote}
+\mbox{\Hypertarget{led_8c_a6e046e04fe89898bcc0f805f57c28bd4}\label{led_8c_a6e046e04fe89898bcc0f805f57c28bd4}} 
+\index{led.c@{led.c}!led\_turn\_on@{led\_turn\_on}}
+\index{led\_turn\_on@{led\_turn\_on}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_turn\_on()}{led\_turn\_on()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} led\+\_\+turn\+\_\+on (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} $\ast$}]{p\+\_\+led }\end{DoxyParamCaption})}
+
+
+
+Turns the LED on. 
+
+\begin{DoxyNote}{Note}
+See header \mbox{\hyperlink{led_8h}{led.\+h}} for reference. 
+\end{DoxyNote}

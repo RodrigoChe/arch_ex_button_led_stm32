@@ -1,0 +1,82 @@
+\hypertarget{group___button_group}{}\doxysection{Button Component}
+\label{group___button_group}\index{Button Component@{Button Component}}
+
+
+Functions and structures related to buttons.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbutton__t}{button\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure definition to represent a button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___button_group_ga77a9a4e0f38e53ec372ed2e5060b5e99}{BUTTON\+\_\+\+MAX\+\_\+\+NUMBER}}~(2)
+\begin{DoxyCompactList}\small\item\em Maximum number of buttons supported. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___button_group_ga8081225ac34cb635456c8895f67481e0}{button\+\_\+initialize}} (\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$p\+\_\+button)
+\begin{DoxyCompactList}\small\item\em Initializes a button. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___button_group_ga496cebc7fbd5ae23aff3ffa7e5c1aebc}{button\+\_\+is\+\_\+pressed}} (\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$p\+\_\+button)
+\begin{DoxyCompactList}\small\item\em Checks if the button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions and structures related to buttons. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___button_group_ga77a9a4e0f38e53ec372ed2e5060b5e99}\label{group___button_group_ga77a9a4e0f38e53ec372ed2e5060b5e99}} 
+\index{Button Component@{Button Component}!BUTTON\_MAX\_NUMBER@{BUTTON\_MAX\_NUMBER}}
+\index{BUTTON\_MAX\_NUMBER@{BUTTON\_MAX\_NUMBER}!Button Component@{Button Component}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_MAX\_NUMBER}{BUTTON\_MAX\_NUMBER}}
+{\footnotesize\ttfamily \#define BUTTON\+\_\+\+MAX\+\_\+\+NUMBER~(2)}
+
+
+
+Maximum number of buttons supported. 
+
+In this macro you put the number of buttons present in your hardware board 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___button_group_ga8081225ac34cb635456c8895f67481e0}\label{group___button_group_ga8081225ac34cb635456c8895f67481e0}} 
+\index{Button Component@{Button Component}!button\_initialize@{button\_initialize}}
+\index{button\_initialize@{button\_initialize}!Button Component@{Button Component}}
+\doxysubsubsection{\texorpdfstring{button\_initialize()}{button\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} button\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$}]{p\+\_\+button }\end{DoxyParamCaption})}
+
+
+
+Initializes a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+button} & Pointer to the button structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+This function initializes the specified button by configuring its digital I/O pin. \mbox{\Hypertarget{group___button_group_ga496cebc7fbd5ae23aff3ffa7e5c1aebc}\label{group___button_group_ga496cebc7fbd5ae23aff3ffa7e5c1aebc}} 
+\index{Button Component@{Button Component}!button\_is\_pressed@{button\_is\_pressed}}
+\index{button\_is\_pressed@{button\_is\_pressed}!Button Component@{Button Component}}
+\doxysubsubsection{\texorpdfstring{button\_is\_pressed()}{button\_is\_pressed()}}
+{\footnotesize\ttfamily bool button\+\_\+is\+\_\+pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$}]{p\+\_\+button }\end{DoxyParamCaption})}
+
+
+
+Checks if the button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+button} & Pointer to the button structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the button is pressed, false otherwise.
+\end{DoxyReturn}
+This function checks the current state of the specified button. 

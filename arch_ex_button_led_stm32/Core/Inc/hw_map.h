@@ -1,6 +1,6 @@
 /**
  * @file   hw_map.h
- * @brief  Hardware pins and peripheral map for ESP32 devkit v1 board.
+ * @brief  Hardware details and peripheral map for STM32F106C6T6A BluepPill board.
  * @author Rodrigo D. Pechoneri
  */
 

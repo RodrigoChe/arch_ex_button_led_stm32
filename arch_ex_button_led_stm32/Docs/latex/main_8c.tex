@@ -1,0 +1,114 @@
+\hypertarget{main_8c}{}\doxysection{/media/rodrigo\+\_\+che/\+\_\+files/\+Git\+Hub/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/\+Core/\+Src/main.c File Reference}
+\label{main_8c}\index{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Core/Src/main.c@{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Core/Src/main.c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hw\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}led.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_add3190cf715f513666f4be42874d91e2}\label{main_8c_add3190cf715f513666f4be42874d91e2}} 
+void {\bfseries app\+\_\+init} (void)
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a3239f1842a2cfb31bf558557afc59912}\label{main_8c_a3239f1842a2cfb31bf558557afc59912}} 
+\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} {\bfseries led\+Green}
+\item 
+\mbox{\Hypertarget{main_8c_a5eb78193d248d6cd7c5d69e09363cf51}\label{main_8c_a5eb78193d248d6cd7c5d69e09363cf51}} 
+\mbox{\hyperlink{led_8h_a87d54afed053d27f1964f42438004ef5}{led\+\_\+t}} {\bfseries led\+Yellow}
+\item 
+\mbox{\Hypertarget{main_8c_a1e193cb5f66c799703a618d15565d549}\label{main_8c_a1e193cb5f66c799703a618d15565d549}} 
+\mbox{\hyperlink{structled__controller__t}{led\+\_\+controller\+\_\+t}} {\bfseries led\+Actions}
+\item 
+\mbox{\Hypertarget{main_8c_a3db338ec9b64d43eba354ba4c87eccbd}\label{main_8c_a3db338ec9b64d43eba354ba4c87eccbd}} 
+\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} {\bfseries push\+Button}
+\item 
+\mbox{\Hypertarget{main_8c_ae35efd74f2826ad4f50543aef65f9fd5}\label{main_8c_ae35efd74f2826ad4f50543aef65f9fd5}} 
+\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} {\bfseries push\+Button2}
+\item 
+\mbox{\Hypertarget{main_8c_a6e86dffeea6e2bb7d2524c376ab0ec10}\label{main_8c_a6e86dffeea6e2bb7d2524c376ab0ec10}} 
+bool {\bfseries g\+\_\+button\+\_\+pressed} = false
+\item 
+\mbox{\Hypertarget{main_8c_a5d720623261ce7a1767e616dbcdfb91c}\label{main_8c_a5d720623261ce7a1767e616dbcdfb91c}} 
+uint32\+\_\+t {\bfseries g\+\_\+button\+\_\+polling\+\_\+freq} = 0
+\item 
+\mbox{\Hypertarget{main_8c_a224dbe4254833e93463e6cbb9e39ab36}\label{main_8c_a224dbe4254833e93463e6cbb9e39ab36}} 
+uint32\+\_\+t {\bfseries g\+\_\+update\+\_\+led\+\_\+freq} = 0
+\item 
+\mbox{\Hypertarget{main_8c_a1e6e90843da6e6e9c8995dc0691d7496}\label{main_8c_a1e6e90843da6e6e9c8995dc0691d7496}} 
+uint8\+\_\+t {\bfseries g\+\_\+pressured\+\_\+counting} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2024 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Initializes the RCC Oscillators according to the specified parameters in the \mbox{\hyperlink{struct_r_c_c___osc_init_type_def}{RCC\+\_\+\+Osc\+Init\+Type\+Def}} structure.
+
+Initializes the CPU, AHB and APB buses clocks

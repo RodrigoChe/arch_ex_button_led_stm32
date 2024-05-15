@@ -1,0 +1,149 @@
+\hypertarget{group___digital_i_o_group}{}\doxysection{Digital I/O Functions}
+\label{group___digital_i_o_group}\index{Digital I/O Functions@{Digital I/O Functions}}
+
+
+Functions for digital I/O operations.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_ga4a978e9f787c6306b0cd9efe147ee603}{digital\+\_\+io\+\_\+initialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} initial\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Initializes the digital I/O pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gae0a6a3d00ac58e25af7e288a05d7e93f}{digital\+\_\+io\+\_\+deinitialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Deinitializes the digital I/O pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_ga9bab49010cd3af183b246253790f52a7}{digital\+\_\+io\+\_\+write}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} state)
+\begin{DoxyCompactList}\small\item\em Writes to the digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gaa3f9d056c4e64fe30a4d8bdfef681f3d}{digital\+\_\+io\+\_\+read}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} $\ast$p\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Reads the state of the digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gaa25fd3fd834a781351930ef0a620145a}{digital\+\_\+io\+\_\+toggle}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Toggles the output state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for digital I/O operations. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___digital_i_o_group_gae0a6a3d00ac58e25af7e288a05d7e93f}\label{group___digital_i_o_group_gae0a6a3d00ac58e25af7e288a05d7e93f}} 
+\index{Digital I/O Functions@{Digital I/O Functions}!digital\_io\_deinitialize@{digital\_io\_deinitialize}}
+\index{digital\_io\_deinitialize@{digital\_io\_deinitialize}!Digital I/O Functions@{Digital I/O Functions}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_deinitialize()}{digital\_io\_deinitialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+deinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the digital I/O pin. 
+
+This function deinitializes the specified digital I/O pin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Pointer to the digital I/O structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group___digital_i_o_group_ga4a978e9f787c6306b0cd9efe147ee603}\label{group___digital_i_o_group_ga4a978e9f787c6306b0cd9efe147ee603}} 
+\index{Digital I/O Functions@{Digital I/O Functions}!digital\_io\_initialize@{digital\_io\_initialize}}
+\index{digital\_io\_initialize@{digital\_io\_initialize}!Digital I/O Functions@{Digital I/O Functions}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_initialize()}{digital\_io\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}}}]{initial\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Initializes the digital I/O pin. 
+
+This function initializes the specified digital I/O pin with the given initial state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Pointer to the digital I/O structure. \\
+\hline
+{\em initial\+\_\+state} & Default output value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group___digital_i_o_group_gaa3f9d056c4e64fe30a4d8bdfef681f3d}\label{group___digital_i_o_group_gaa3f9d056c4e64fe30a4d8bdfef681f3d}} 
+\index{Digital I/O Functions@{Digital I/O Functions}!digital\_io\_read@{digital\_io\_read}}
+\index{digital\_io\_read@{digital\_io\_read}!Digital I/O Functions@{Digital I/O Functions}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_read()}{digital\_io\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} $\ast$}]{p\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Reads the state of the digital output. 
+
+This function reads the current state of the digital output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Pointer to the digital I/O structure. \\
+\hline
+{\em state} & Pointer where the current output state will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group___digital_i_o_group_gaa25fd3fd834a781351930ef0a620145a}\label{group___digital_i_o_group_gaa25fd3fd834a781351930ef0a620145a}} 
+\index{Digital I/O Functions@{Digital I/O Functions}!digital\_io\_toggle@{digital\_io\_toggle}}
+\index{digital\_io\_toggle@{digital\_io\_toggle}!Digital I/O Functions@{Digital I/O Functions}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_toggle()}{digital\_io\_toggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio }\end{DoxyParamCaption})}
+
+
+
+Toggles the output state. 
+
+This function toggles the output state of the digital I/O pin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Pointer to the digital I/O structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group___digital_i_o_group_ga9bab49010cd3af183b246253790f52a7}\label{group___digital_i_o_group_ga9bab49010cd3af183b246253790f52a7}} 
+\index{Digital I/O Functions@{Digital I/O Functions}!digital\_io\_write@{digital\_io\_write}}
+\index{digital\_io\_write@{digital\_io\_write}!Digital I/O Functions@{Digital I/O Functions}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_write()}{digital\_io\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Writes to the digital output. 
+
+This function writes the specified state to the digital output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Pointer to the digital I/O structure. \\
+\hline
+{\em state} & State to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+success or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}

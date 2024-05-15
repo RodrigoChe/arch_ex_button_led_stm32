@@ -1,0 +1,31 @@
+\hypertarget{digital__io__adapter_8c}{}\doxysection{/media/rodrigo\+\_\+che/\+\_\+files/\+Git\+Hub/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+stm32/\+Adpters/digital\+\_\+io\+\_\+adapter.c File Reference}
+\label{digital__io__adapter_8c}\index{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Adpters/digital\_io\_adapter.c@{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_stm32/arch\_ex\_button\_led\_stm32/Adpters/digital\_io\_adapter.c}}
+
+
+\+: Implementation of Digital IO Peripheral interface.  
+
+
+{\ttfamily \#include \char`\"{}digital\+\_\+io\+\_\+adapter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_ga4a978e9f787c6306b0cd9efe147ee603}{digital\+\_\+io\+\_\+initialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} initial\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Initializes the digital I/O pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gae0a6a3d00ac58e25af7e288a05d7e93f}{digital\+\_\+io\+\_\+deinitialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Deinitializes the digital I/O pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_ga9bab49010cd3af183b246253790f52a7}{digital\+\_\+io\+\_\+write}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} state)
+\begin{DoxyCompactList}\small\item\em Writes to the digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gaa3f9d056c4e64fe30a4d8bdfef681f3d}{digital\+\_\+io\+\_\+read}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_acd6cb931c16a42d28d7e7b02e0c7f109}{digital\+\_\+io\+\_\+state\+\_\+t}} $\ast$p\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Reads the state of the digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{group___digital_i_o_group_gaa25fd3fd834a781351930ef0a620145a}{digital\+\_\+io\+\_\+toggle}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Toggles the output state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Implementation of Digital IO Peripheral interface. 
+
+\begin{DoxyAuthor}{Author}
+\+: Rodrigo D. Pechoneri 
+\end{DoxyAuthor}
